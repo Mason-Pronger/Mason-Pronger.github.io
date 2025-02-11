@@ -1,0 +1,110 @@
+:root {
+    --dark-maroon: #201127;
+    --dark-purple: #201433;
+    --dark-blue: #1b1e34;
+    --teal-blue: #355d68;
+    --sea-green: #6aaf9d;
+    --light-green: #94c5ac;
+    --light-yellow: #ffeb99;
+    --peach: #ffc27a;
+    --salmon: #ec9a6d;
+    --rose: #d9626b;
+    --maroon: #a73169;
+    --light-maroon: #c24b6e;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--dark-maroon);
+    color: var(--light-green);
+    margin: 0, 0, 0, 0;
+    padding: 0;
+    
+}
+
+div {
+    padding: 0px;
+    text-align: center;
+    height: auto;
+    max-width: 40vw;
+    margin: auto;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between columns */
+    margin-top: 0px; /* Add some space above the row */
+    
+}
+
+.column {
+    flex: 1; /* Make columns take up equal space */
+    background-color: var(--peach); /* Example background color */
+    color: var(--dark-purple); /* Example text color */
+    margin: .5vw 0 0 0; /* Add some space around columns */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    width: 100%; /* Make columns take up the full width of the row */
+}
+
+.column h2 {
+    text-align: center; /* Center column headings */
+}
+
+.column ul {
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.column ul li {
+    font-size: auto; /* Increase the size of the dots */
+}
+
+.column a {
+    font-size: auto; /* Scale links with the rest of the columns */
+}
+
+h1, h2, p {
+    margin: 0;
+    color: var(--dark-purple);
+    background-color: var(--peach);
+}
+
+h1 {
+    font-size: auto vw;
+}
+
+h2 {
+    font-size: auto vw;
+}
+
+p {
+    font-size: auto vw;
+}
+
+ul {
+    background-color: var(--peach);
+    color: var(--dark-purple);
+    align-items: left;
+    margin-top: 0%;
+}
+
+/* Link styles */
+a {
+    color: var(--teal-blue); /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: var(--dark-purple); /* Color when hovering over the link */
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:active {
+    color: var(--dark-maroon); /* Color when the link is active (clicked) */
+}
+
+a:visited {
+    color: var(--peach); /* Color for visited links */
+}
